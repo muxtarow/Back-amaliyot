@@ -1,5 +1,5 @@
 const { Seat, Seat_type, VenueModel, Sector } = require("../models");
-const { validateSeat } = require("../validation/seatValidation");
+const { validateSeat } = require("../validation/SeatValidation");
 
 exports.createSeat = async (req, res) => {
   const validation = validateSeat(req.body);
